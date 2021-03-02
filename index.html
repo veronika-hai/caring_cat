@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="#" />
 
     <script src="script.js" type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -13,7 +14,12 @@
       <img id="beginning" src="Logo.png" alt="Logo" />
       <button id="startbtn" onclick="changeImg()">Start</button>
 
-      <video controls id="catcallvid1" src="cat1.mp4">
+      <video
+        controls
+        id="catcallvid1"
+        src="cat1.mp4"
+        media="(max-height: 1080px)"
+      >
         <source src="movie.ogg" type="video/ogg" />
         Your browser does not support the video tag.
       </video>
