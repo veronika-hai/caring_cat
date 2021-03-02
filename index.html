@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caring Cat</title>
+    <link href="stylesheet.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="#" />
+
+    <script src="p5.min.js" type="module"></script>
+    <script src="p5setup.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="banner">
+      <img id="beginning" src="Logo.png" alt="Logo" />
+      <button id="startbtn" onclick="changeImg()">Start</button>
+
+      <video controls id="catcallvid1" src="cat1.mp4">
+        <source src="movie.ogg" type="video/ogg" />
+        Your browser does not support the video tag.
+      </video>
+
+      <audio id="audio1" onended="gestenvid()">
+        <source src="answer1.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio2" onended="gestenvid()">
+        <source src="answer2.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio3" onended="gestenvid()">
+        <source src="answer3.mp3" type="audio/mpeg" />
+      </audio>
+
+      <audio id="audio1wg" onended="backtot2()">
+        <source src="answer1.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio2wg" onended="backtot2()">
+        <source src="answer2.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio3wg" onended="backtot2()">
+        <source src="answer3.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </body>
+</html>
