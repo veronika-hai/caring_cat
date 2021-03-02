@@ -1,7 +1,9 @@
 let sketch = new p5();
+let width = windowWidth;
+let height = windowHeight;
 
 function setup() {
-  sketch.createCanvas(1920, 1820);
+  sketch.createCanvas(windowWidth, windowHeight);
   sketch.frameRate(30);
 }
 window.setup = setup;
