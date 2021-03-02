@@ -1019,3 +1019,6 @@ function changetotask2() {
   img9.replaceWith(img11);
 }
 window.changetotask2 = changetotask2;
+
+console.log(window.innerWidth, window.innerHeight);
+// 1536 722
