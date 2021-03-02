@@ -29,6 +29,15 @@ let img13 = document.createElement("img");
 img13.src = "trauen.png";
 let img14 = document.createElement("img");
 img14.src = "People-help.png";
+let img15 = document.createElement("img");
+img15.src = "People-stop.png";
+let img16 = document.createElement("img");
+img16.src = "mutig.png";
+let img17 = document.createElement("img");
+img17.src = "People-afterhelp.png";
+let img18 = document.createElement("img");
+img18.src = "task3.png";
+img18.setAttribute("class", "tasks");
 
 // BUTTONS
 let btnstart = document.getElementById("startbtn");
@@ -48,7 +57,7 @@ btncatcall2.setAttribute("onclick", "startVid2()");
 
 let btnquiz = document.createElement("button");
 btnquiz.id = "quizstart";
-btnquiz.innerHTML = "Ja!";
+btnquiz.innerHTML = "Okay";
 btnquiz.setAttribute("onclick", "quizstart()");
 
 // BUTTONS TASK 1
@@ -102,6 +111,23 @@ btnanswer9.innerHTML = "Lass mich in Ruhe!";
 btnanswer9.setAttribute("onclick", "answer6()");
 btnanswer9.setAttribute("class", "a6");
 
+// TASK 3 PASSANT
+let btnanswer10 = document.createElement("button");
+btnanswer10.id = "answer10";
+btnanswer10.innerHTML = "Ist alles okay?";
+btnanswer10.setAttribute("onclick", "answer7()");
+btnanswer10.setAttribute("class", "a7");
+let btnanswer11 = document.createElement("button");
+btnanswer11.id = "answer11";
+btnanswer11.innerHTML = "*ignorieren*";
+btnanswer11.setAttribute("onclick", "answer8()");
+btnanswer11.setAttribute("class", "a8");
+let btnanswer12 = document.createElement("button");
+btnanswer12.id = "answer12";
+btnanswer12.innerHTML = "*wegschauen*";
+btnanswer12.setAttribute("onclick", "answer9()");
+btnanswer12.setAttribute("class", "a9");
+
 // BUTTON CHARAKTER
 let btnbetroffene = document.createElement("button");
 btnbetroffene.id = "selectb";
@@ -141,6 +167,7 @@ vid6.setAttribute("controls", "controls");
 let audio1 = document.getElementById("audio1");
 let audio2 = document.getElementById("audio2");
 let audio3 = document.getElementById("audio3");
+let audio9 = document.getElementById("audio9");
 
 let btndown;
 
@@ -830,6 +857,8 @@ function answer3wg() {
 window.answer3wg = answer3wg;
 
 function answerstask1_2() {
+  btnbetroffene.style.display = "none";
+  btntäter.style.display = "none";
   img10.animate(
     [
       {
@@ -911,7 +940,6 @@ function answerstask1_2() {
     btnanswer4.style.display = "none";
     btnanswer5.style.display = "none";
     btnanswer6.style.display = "none";
-    btnbetroffene.style.display = "none";
     img10.replaceWith(img8);
     img8.animate(
       [
@@ -966,6 +994,7 @@ function backtot2() {
     btnanswer5.style.display = "block";
     btnanswer6.style.display = "block";
     btnbetroffene.style.display = "block";
+    btntäter.style.display = "block";
     img10.animate(
       [
         {
@@ -1063,6 +1092,8 @@ function changetotask1() {
 window.changetotask1 = changetotask1;
 
 function answer4() {
+  btnbetroffene.style.display = "none";
+  btntäter.style.display = "none";
   img10.animate(
     [
       {
@@ -1220,16 +1251,16 @@ function answer4() {
 }
 window.answer4 = answer4;
 
-function gesten2() {
-  img11.replaceWith(vid6);
-  img13.replaceWith(img14);
-  vid6.animate(
+function answer5() {
+  btnbetroffene.style.display = "none";
+  btntäter.style.display = "none";
+  img10.animate(
     [
       {
-        opacity: 0,
+        opacity: 1,
       },
       {
-        opacity: 1,
+        opacity: 0,
       },
     ],
     {
@@ -1238,6 +1269,240 @@ function gesten2() {
       fill: "forwards",
     }
   );
+  img11.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer7.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer8.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer9.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  setTimeout(function gone() {
+    img11.style.display = "none";
+    btnanswer7.style.display = "none";
+    btnanswer8.style.display = "none";
+    btnanswer9.style.display = "none";
+    gesten2();
+  }, 1500);
+}
+window.answer5 = answer5;
+
+function answer6() {
+  btnbetroffene.style.display = "none";
+  btntäter.style.display = "none";
+  img10.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img11.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer7.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer8.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer9.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  setTimeout(function gone() {
+    img10.replaceWith(img15);
+    img11.style.display = "none";
+    btnanswer7.style.display = "none";
+    btnanswer8.style.display = "none";
+    btnanswer9.style.display = "none";
+    img15.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    audio9.play();
+  }, 1500);
+  setTimeout(function goneweg() {
+    img15.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 3500);
+  setTimeout(function trauen() {
+    img15.replaceWith(img16);
+    img16.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 5000);
+
+  setTimeout(function gesten2vid() {
+    img16.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 7000);
+  setTimeout(function gesten2vid() {
+    gesten2();
+  }, 8500);
+}
+window.answer6 = answer6;
+
+function gesten2() {
+  img13.replaceWith(img14);
+  img10.replaceWith(img14);
+  img16.replaceWith(img14);
   img14.animate(
     [
       {
@@ -1254,9 +1519,144 @@ function gesten2() {
     }
   );
   setTimeout(function vidplay() {
+    img11.replaceWith(vid6);
+    vid6.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
     vid6.play();
-  }, 1500);
+  }, 2000);
 
-  vid6.onended = function passantready() {};
+  vid6.onended = function passantready() {
+    vid6.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    img14.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+
+    setTimeout(function passantda() {
+      img14.replaceWith(img17);
+      vid6.replaceWith(img18);
+      img18.style.display = "block";
+      btnanswer7.replaceWith(btnanswer10);
+      btnanswer8.replaceWith(btnanswer11);
+      btnanswer9.replaceWith(btnanswer12);
+      btnanswer10.style.display = "block";
+      btnanswer10.style.display = "block";
+      btnanswer10.style.display = "block";
+      img17.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      img18.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btnanswer10.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btnanswer11.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btnanswer12.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+    }),
+      1500;
+  };
 }
 window.gesten2 = gesten2;

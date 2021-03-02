@@ -198,6 +198,48 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
+.a7 {
+  position: absolute;
+  top: 370px;
+  left: 79.5%;
+  background-color: #591126;
+  color: #fcdbdb;
+  text-align: center;
+  font-size: 25px;
+  font-family: Merriweather;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.a8 {
+  position: absolute;
+  top: 480px;
+  left: 79.9%;
+  background-color: #591126;
+  color: #fcdbdb;
+  text-align: center;
+  font-size: 25px;
+  font-family: Merriweather;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.a9 {
+  position: absolute;
+  top: 590px;
+  left: 79.3%;
+  background-color: #591126;
+  color: #fcdbdb;
+  text-align: center;
+  font-size: 25px;
+  font-family: Merriweather;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 #audio1 {
   display: "none";
 }
