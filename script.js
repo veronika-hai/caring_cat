@@ -78,6 +78,22 @@ btnanswer6.id = "answer6";
 btnanswer6.innerHTML = "Lecker, lecker.";
 btnanswer6.setAttribute("onclick", "answer3wg()");
 btnanswer6.setAttribute("class", "a3");
+// TASK 2 BETROFFENE
+let btnanswer7 = document.createElement("button");
+btnanswer7.id = "answer7";
+btnanswer7.innerHTML = "*wegrennen*";
+btnanswer7.setAttribute("onclick", "answer4()");
+btnanswer7.setAttribute("class", "a4");
+let btnanswer8 = document.createElement("button");
+btnanswer8.id = "answer8";
+btnanswer8.innerHTML = "*Hilfe-Geste*";
+btnanswer8.setAttribute("onclick", "answer5()");
+btnanswer8.setAttribute("class", "a5");
+let btnanswer9 = document.createElement("button");
+btnanswer9.id = "answer9";
+btnanswer9.innerHTML = "Lass mich in Ruhe!";
+btnanswer9.setAttribute("onclick", "answer6()");
+btnanswer9.setAttribute("class", "a6");
 
 // BUTTON CHARAKTER
 let btnbetroffene = document.createElement("button");
@@ -1017,8 +1033,8 @@ window.backtot2 = backtot2;
 
 function changetotask2() {
   img9.replaceWith(img11);
+  btnanswer4.replaceWith(btnanswer7);
+  btnanswer5.replaceWith(btnanswer8);
+  btnanswer6.replaceWith(btnanswer9);
 }
 window.changetotask2 = changetotask2;
-
-console.log(window.innerWidth, window.innerHeight);
-// 1536 722

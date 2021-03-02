@@ -66,7 +66,7 @@ body {
 #catcalls {
   position: absolute;
   top: 340px;
-  left: 410px;
+  left: 27%;
   background-color: #fcdbdb;
   color: #591126;
   text-align: center;
@@ -81,7 +81,7 @@ body {
 #catcalls2 {
   position: absolute;
   top: 470px;
-  left: 473px;
+  left: 31%;
   background-color: #fcdbdb;
   color: #591126;
   text-align: center;
@@ -117,7 +117,7 @@ body {
 .a1 {
   position: absolute;
   top: 370px;
-  left: 1160px;
+  left: 75.5%;
   background-color: #591126;
   color: #fcdbdb;
   text-align: center;
@@ -131,7 +131,7 @@ body {
 .a2 {
   position: absolute;
   top: 480px;
-  left: 1255px;
+  left: 82%;
   background-color: #591126;
   color: #fcdbdb;
   text-align: center;
@@ -145,7 +145,49 @@ body {
 .a3 {
   position: absolute;
   top: 590px;
-  left: 1225px;
+  left: 80%;
+  background-color: #591126;
+  color: #fcdbdb;
+  text-align: center;
+  font-size: 25px;
+  font-family: Merriweather;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.a4 {
+  position: absolute;
+  top: 370px;
+  left: 80%;
+  background-color: #591126;
+  color: #fcdbdb;
+  text-align: center;
+  font-size: 25px;
+  font-family: Merriweather;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.a5 {
+  position: absolute;
+  top: 480px;
+  left: 79.9%;
+  background-color: #591126;
+  color: #fcdbdb;
+  text-align: center;
+  font-size: 25px;
+  font-family: Merriweather;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.a6 {
+  position: absolute;
+  top: 590px;
+  left: 78%;
   background-color: #591126;
   color: #fcdbdb;
   text-align: center;
@@ -162,7 +204,7 @@ body {
 #selectb {
   position: absolute;
   top: 49px;
-  left: 1287px;
+  left: 83.7%;
   padding: 45px 47px;
   background: none;
   border: none;
