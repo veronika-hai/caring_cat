@@ -23,6 +23,12 @@ img10.src = "People2.png";
 let img11 = document.createElement("img");
 img11.src = "task2.png";
 img11.setAttribute("class", "tasks");
+let img12 = document.createElement("img");
+img12.src = "People-gone.png";
+let img13 = document.createElement("img");
+img13.src = "trauen.png";
+let img14 = document.createElement("img");
+img14.src = "People-help.png";
 
 // BUTTONS
 let btnstart = document.getElementById("startbtn");
@@ -78,6 +84,7 @@ btnanswer6.id = "answer6";
 btnanswer6.innerHTML = "Lecker, lecker.";
 btnanswer6.setAttribute("onclick", "answer3wg()");
 btnanswer6.setAttribute("class", "a3");
+
 // TASK 2 BETROFFENE
 let btnanswer7 = document.createElement("button");
 btnanswer7.id = "answer7";
@@ -102,6 +109,9 @@ btnbetroffene.setAttribute("onclick", "changetotask2()");
 let btntäter = document.createElement("button");
 btntäter.id = "selectt";
 btntäter.setAttribute("onclick", "changetotask1()");
+let btnpassant = document.createElement("button");
+btnpassant.id = "selectp";
+btnpassant.setAttribute("onclick", "");
 
 // VIDEOS VOR QUIZ
 let vid1 = document.getElementById("catcallvid1");
@@ -122,6 +132,10 @@ let vid5 = document.createElement("video");
 vid5.src = "cat5.mp4";
 vid5.id = "gestenvid";
 vid5.setAttribute("controls", "controls");
+let vid6 = document.createElement("video");
+vid6.src = "cat6.mp4";
+vid6.id = "gesten2vid";
+vid6.setAttribute("controls", "controls");
 
 //AUDIO
 let audio1 = document.getElementById("audio1");
@@ -1036,5 +1050,213 @@ function changetotask2() {
   btnanswer4.replaceWith(btnanswer7);
   btnanswer5.replaceWith(btnanswer8);
   btnanswer6.replaceWith(btnanswer9);
+  document.body.appendChild(btntäter);
 }
 window.changetotask2 = changetotask2;
+
+function changetotask1() {
+  img11.replaceWith(img9);
+  btnanswer7.replaceWith(btnanswer4);
+  btnanswer8.replaceWith(btnanswer5);
+  btnanswer9.replaceWith(btnanswer6);
+}
+window.changetotask1 = changetotask1;
+
+function answer4() {
+  img10.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img11.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer7.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer8.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer9.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  setTimeout(function gone() {
+    img10.replaceWith(img12);
+    img11.style.display = "none";
+    btnanswer7.style.display = "none";
+    btnanswer8.style.display = "none";
+    btnanswer9.style.display = "none";
+    img12.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 1500);
+
+  setTimeout(function goneweg() {
+    img12.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 3500);
+  setTimeout(function trauen() {
+    img12.replaceWith(img13);
+    img13.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 5000);
+
+  setTimeout(function gesten2vid() {
+    img13.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 7000);
+  setTimeout(function gesten2vid() {
+    gesten2();
+  }, 8500);
+}
+window.answer4 = answer4;
+
+function gesten2() {
+  img11.replaceWith(vid6);
+  img13.replaceWith(img14);
+  vid6.animate(
+    [
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img14.animate(
+    [
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  setTimeout(function vidplay() {
+    vid6.play();
+  }, 1500);
+
+  vid6.onended = function passantready() {};
+}
+window.gesten2 = gesten2;
