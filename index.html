@@ -10,75 +10,78 @@
 
   <body>
     <div class="banner" id="banner">
-      <img id="beginning" src="Logo.png" alt="Logo" />
-      <button id="startbtn" onclick="changeImg()">Start</button>
-      <video
-        controls
-        id="catcallvid1"
-        src="cat1.mp4"
-        media="(max-height: 1080px)"
-      >
-        <source src="movie.ogg" type="video/ogg" />
-        Your browser does not support the video tag.
-      </video>
-
-      <audio id="audio1" onended="gestenvid()">
-        <source src="answer1.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio2" onended="gestenvid()">
-        <source src="answer2.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio3" onended="gestenvid()">
-        <source src="answer3.mp3" type="audio/mpeg" />
-      </audio>
-
-      <audio id="audio1wg" onended="backtot2()">
-        <source src="answer1.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio2wg" onended="backtot2()">
-        <source src="answer2.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio3wg" onended="backtot2()">
-        <source src="answer3.mp3" type="audio/mpeg" />
-      </audio>
-
-      <audio id="audio1t3" onended="backtot3()">
-        <source src="answer1.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio2t3" onended="backtot3()">
-        <source src="answer2.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio3t3" onended="backtot3()">
-        <source src="answer3.mp3" type="audio/mpeg" />
-      </audio>
-
-      <audio id="audio9">
-        <source src="answer9.mp3" type="audio/mpeg" />
-      </audio>
-
-      <audio id="audio10">
-        <source src="answer10.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio11">
-        <source src="answer11.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio12">
-        <source src="answer12.mp3" type="audio/mpeg" />
-      </audio>
-
-      <audio id="audio13">
-        <source src="answer13.mp3" type="audio/mpeg" />
-      </audio>
-
-      <audio id="audio14">
-        <source src="answer14.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio15" onended="backtot5()">
-        <source src="answer15.mp3" type="audio/mpeg" />
-      </audio>
-      <audio id="audio16" onended="backtot5()">
-        <source src="answer16.mp3" type="audio/mpeg" />
-      </audio>
+      <div class="inbannerleft" id="inbannerleft">
+        <img id="beginning" src="Logo.png" alt="Logo" />
+        <button id="startbtn" onclick="changeImg()">Start</button>
+      </div>
+      <div class="inbannerright">
+        <video
+          controls
+          id="catcallvid1"
+          src="cat1.mp4"
+          media="(max-height: 1080px)"
+        >
+          <source src="movie.ogg" type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
+    <audio id="audio1" onended="gestenvid()">
+      <source src="answer1.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio2" onended="gestenvid()">
+      <source src="answer2.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio3" onended="gestenvid()">
+      <source src="answer3.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="audio1wg" onended="backtot2()">
+      <source src="answer1.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio2wg" onended="backtot2()">
+      <source src="answer2.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio3wg" onended="backtot2()">
+      <source src="answer3.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="audio1t3" onended="backtot3()">
+      <source src="answer1.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio2t3" onended="backtot3()">
+      <source src="answer2.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio3t3" onended="backtot3()">
+      <source src="answer3.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="audio9">
+      <source src="answer9.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="audio10">
+      <source src="answer10.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio11">
+      <source src="answer11.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio12">
+      <source src="answer12.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="audio13">
+      <source src="answer13.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="audio14">
+      <source src="answer14.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio15" onended="backtot5()">
+      <source src="answer15.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio16" onended="backtot5()">
+      <source src="answer16.mp3" type="audio/mpeg" />
+    </audio>
   </body>
 </html>

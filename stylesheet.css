@@ -40,6 +40,16 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.inbannerleft {
+  width: auto;
+  height: 722px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner #startbtn {
   top: 359px;
   left: auto;
@@ -54,12 +64,12 @@ body {
   display: none;
 }
 
-.banner #catcalls {
+.inbannerleft #catcalls {
   top: 340px;
-  left: 26vw;
+  left: auto;
 }
 
-.banner #catcalls2 {
+.inbannerleft #catcalls2 {
   top: 470px;
   left: auto;
 }
