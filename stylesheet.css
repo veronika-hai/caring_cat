@@ -25,9 +25,10 @@ body {
 .banner video {
   top: 0;
   right: 0;
-  width: 406.13px;
-  height: 722px;
+  width: auto;
+  height: 100%;
 }
+
 .banner button {
   position: absolute;
   background-color: #fcdbdb;
@@ -50,13 +51,23 @@ body {
   align-items: center;
 }
 
-.banner #startbtn {
+.inbannerright {
+  width: auto;
+  height: 722px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: min-content;
+}
+
+#startbtn {
   top: 359px;
   left: auto;
 }
 
-.banner #soundan {
-  top: 470px;
+#soundan {
+  top: 480px;
   left: auto;
 }
 
@@ -64,37 +75,29 @@ body {
   display: none;
 }
 
-.inbannerleft #catcalls {
+#catcalls {
   top: 340px;
   left: auto;
 }
 
-.inbannerleft #catcalls2 {
-  top: 470px;
+#catcalls2 {
+  top: 480px;
   left: auto;
 }
 
 #quizstart {
-  position: absolute;
-  top: 480px;
+  top: 500px;
   left: auto;
-  background-color: #fcdbdb;
-  color: #591126;
-  text-align: center;
-  font-size: 30px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
+
 .banner .tasks {
   top: 0;
-  left: 0;
+  right: 0;
   object-fit: cover;
   width: auto;
   height: 100%;
 }
+
 .a1 {
   position: absolute;
   top: 370px;

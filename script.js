@@ -297,6 +297,7 @@ let audio16 = document.getElementById("audio16");
 
 // BANNER
 let banner = document.getElementById("inbannerleft");
+let banner2 = document.getElementById("inbannerright");
 
 function changeImg() {
   img1.animate(
