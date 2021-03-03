@@ -45,19 +45,9 @@ body {
   left: 46.4%;
 }
 
-#soundan {
-  position: absolute;
+.banner #soundan {
   top: 470px;
   left: auto;
-  background-color: #fcdbdb;
-  color: #591126;
-  text-align: center;
-  font-size: 30px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 #catcallvid1 {
@@ -69,19 +59,9 @@ body {
   left: 27%;
 }
 
-#catcalls2 {
-  position: absolute;
+.banner #catcalls2 {
   top: 470px;
   left: 31%;
-  background-color: #fcdbdb;
-  color: #591126;
-  text-align: center;
-  font-size: 30px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 #quizstart {

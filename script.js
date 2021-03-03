@@ -294,6 +294,9 @@ let audio14 = document.getElementById("audio14");
 let audio15 = document.getElementById("audio15");
 let audio16 = document.getElementById("audio16");
 
+// BANNER
+let banner = document.getElementById("banner");
+
 function changeImg() {
   img1.animate(
     [
@@ -386,7 +389,7 @@ function startVid() {
     setTimeout(function replace3() {
       img2.replaceWith(img3);
       btnsound.replaceWith(btncatcall1);
-      document.getElementById("banner").appendChild(btncatcall2);
+      banner.appendChild(btncatcall2);
       // document.body.appendChild(btncatcall2);
       img3.animate(
         [
