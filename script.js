@@ -386,7 +386,8 @@ function startVid() {
     setTimeout(function replace3() {
       img2.replaceWith(img3);
       btnsound.replaceWith(btncatcall1);
-      document.body.appendChild(btncatcall2);
+      document.getElementById("banner").appendChild(btncatcall2);
+      // document.body.appendChild(btncatcall2);
       img3.animate(
         [
           {

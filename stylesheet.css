@@ -28,11 +28,8 @@ body {
   width: 406.13px;
   height: 722px;
 }
-
-#startbtn {
+.banner button {
   position: absolute;
-  top: 359px;
-  left: auto;
   background-color: #fcdbdb;
   color: #591126;
   text-align: center;
@@ -42,6 +39,10 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+.banner #startbtn {
+  top: 359px;
+  left: 46.4%;
 }
 
 #soundan {
@@ -63,19 +64,9 @@ body {
   display: none;
 }
 
-#catcalls {
-  position: absolute;
+.banner #catcalls {
   top: 340px;
   left: 27%;
-  background-color: #fcdbdb;
-  color: #591126;
-  text-align: center;
-  font-size: 30px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 #catcalls2 {
