@@ -15,6 +15,8 @@ img7.src = "task1.png";
 img7.setAttribute("class", "tasks");
 let img8 = document.createElement("img");
 img8.src = "Answer1.png";
+let img8_2 = document.createElement("img");
+img8_2.src = "answertäter.png";
 let img9 = document.createElement("img");
 img9.src = "task1-2.png";
 img9.setAttribute("class", "tasks");
@@ -38,6 +40,42 @@ img17.src = "People-afterhelp.png";
 let img18 = document.createElement("img");
 img18.src = "task3.png";
 img18.setAttribute("class", "tasks");
+let img18_2 = document.createElement("img");
+img18_2.src = "task3.2.png";
+img18_2.setAttribute("class", "tasks");
+let img19 = document.createElement("img");
+img19.src = "People-gethelp.png";
+let img20 = document.createElement("img");
+img20.src = "People-goaway.png";
+let img21 = document.createElement("img");
+img21.src = "task4.png";
+img21.setAttribute("class", "tasks");
+let img22 = document.createElement("img");
+img22.src = "People-bystander.png";
+let img23 = document.createElement("img");
+img23.src = "fragen.png";
+let img24 = document.createElement("img");
+img24.src = "People-ignore.png";
+let img25 = document.createElement("img");
+img25.src = "People-mad.png";
+let img26 = document.createElement("img");
+img26.src = "People-away.png";
+let img27 = document.createElement("img");
+img27.src = "People-alone.png";
+let img28 = document.createElement("img");
+img28.src = "People-catcallagain.png";
+let img29 = document.createElement("img");
+img29.src = "task5.png";
+img29.setAttribute("class", "tasks");
+let img30 = document.createElement("img");
+img30.src = "task5.2.png";
+img30.setAttribute("class", "tasks");
+let img31 = document.createElement("img");
+img31.src = "People-alright.png";
+let img32 = document.createElement("img");
+img32.src = "People-fault.png";
+let imgend = document.createElement("img");
+imgend.src = "People-end.png";
 
 // BUTTONS
 let btnstart = document.getElementById("startbtn");
@@ -128,6 +166,58 @@ btnanswer12.innerHTML = "*wegschauen*";
 btnanswer12.setAttribute("onclick", "answer9()");
 btnanswer12.setAttribute("class", "a9");
 
+// TASK 3 TÄTER
+let btnanswer4t3 = document.createElement("button");
+btnanswer4t3.id = "answer4t3";
+btnanswer4t3.innerHTML = "Hola Chica! Geiler Arsch";
+btnanswer4t3.setAttribute("onclick", "answer1t3()");
+btnanswer4t3.setAttribute("class", "a1");
+let btnanswer5t3 = document.createElement("button");
+btnanswer5t3.id = "answer5t3";
+btnanswer5t3.innerHTML = "*pfeifen*";
+btnanswer5t3.setAttribute("onclick", "answer2t3()");
+btnanswer5t3.setAttribute("class", "a2");
+let btnanswer6t3 = document.createElement("button");
+btnanswer6t3.id = "answer6t3";
+btnanswer6t3.innerHTML = "Lecker, lecker.";
+btnanswer6t3.setAttribute("onclick", "answer3t3()");
+btnanswer6t3.setAttribute("class", "a3");
+
+// TASK 4
+let btnanswer13 = document.createElement("button");
+btnanswer13.id = "answer13";
+btnanswer13.innerHTML = "*beleidigen*";
+btnanswer13.setAttribute("onclick", "answer10()");
+btnanswer13.setAttribute("class", "a10");
+let btnanswer14 = document.createElement("button");
+btnanswer14.id = "answer14";
+btnanswer14.innerHTML = "*wortlos gehen*";
+btnanswer14.setAttribute("onclick", "answer11()");
+btnanswer14.setAttribute("class", "a11");
+
+// TASK 5 B
+let btnanswer15 = document.createElement("button");
+btnanswer15.id = "answer15";
+btnanswer15.innerHTML = "*weinen*";
+btnanswer15.setAttribute("onclick", "answer12()");
+btnanswer15.setAttribute("class", "a12");
+let btnanswer16 = document.createElement("button");
+btnanswer16.id = "answer16";
+btnanswer16.innerHTML = "*Okay-Geste*";
+btnanswer16.setAttribute("onclick", "end()");
+btnanswer16.setAttribute("class", "a13");
+// TASK 5 P
+let btnanswer17 = document.createElement("button");
+btnanswer17.id = "answer17";
+btnanswer17.innerHTML = "Alles wird gut!";
+btnanswer17.setAttribute("onclick", "answer12()");
+btnanswer17.setAttribute("class", "a14");
+let btnanswer18 = document.createElement("button");
+btnanswer18.id = "answer18";
+btnanswer18.innerHTML = "Es ist nicht deine Schuld!";
+btnanswer18.setAttribute("onclick", "answer13()");
+btnanswer18.setAttribute("class", "a15");
+
 // BUTTON CHARAKTER
 let btnbetroffene = document.createElement("button");
 btnbetroffene.id = "selectb";
@@ -135,9 +225,29 @@ btnbetroffene.setAttribute("onclick", "changetotask2()");
 let btntäter = document.createElement("button");
 btntäter.id = "selectt";
 btntäter.setAttribute("onclick", "changetotask1()");
+let btntäter2 = document.createElement("button");
+btntäter2.id = "selectt2";
+btntäter2.setAttribute("onclick", "task3t()");
 let btnpassant = document.createElement("button");
 btnpassant.id = "selectp";
-btnpassant.setAttribute("onclick", "");
+btnpassant.setAttribute("onclick", "changetotask3()");
+let btnpassant2 = document.createElement("button");
+btnpassant2.id = "selectp2";
+btnpassant2.setAttribute("onclick", "task5p()");
+let btnbetroffene2 = document.createElement("button");
+btnbetroffene2.id = "selectb2";
+btnbetroffene2.setAttribute("onclick", "changetotask5()");
+
+let btnneustart = document.createElement("button");
+btnneustart.id = "neustart";
+btnneustart.innerHTML = "Neustart";
+btnneustart.setAttribute("onclick", "reload()");
+let btninfo = document.createElement("button");
+btninfo.id = "info";
+btninfo.innerHTML = "Mehr Projekte";
+btninfo.setAttribute("onclick", "imd()");
+
+let btndown;
 
 // VIDEOS VOR QUIZ
 let vid1 = document.getElementById("catcallvid1");
@@ -162,14 +272,27 @@ let vid6 = document.createElement("video");
 vid6.src = "cat6.mp4";
 vid6.id = "gesten2vid";
 vid6.setAttribute("controls", "controls");
+let vid7 = document.createElement("video");
+vid7.src = "cat7.mp4";
+vid7.id = "okaygestevid";
+vid7.setAttribute("controls", "controls");
+let vid8 = document.createElement("video");
+vid8.src = "cat8.mp4";
+vid8.id = "einsatzvid";
+vid8.setAttribute("controls", "controls");
 
 //AUDIO
 let audio1 = document.getElementById("audio1");
 let audio2 = document.getElementById("audio2");
 let audio3 = document.getElementById("audio3");
 let audio9 = document.getElementById("audio9");
-
-let btndown;
+let audio10 = document.getElementById("audio10");
+let audio11 = document.getElementById("audio11");
+let audio12 = document.getElementById("audio12");
+let audio13 = document.getElementById("audio13");
+let audio14 = document.getElementById("audio14");
+let audio15 = document.getElementById("audio15");
+let audio16 = document.getElementById("audio16");
 
 function changeImg() {
   img1.animate(
@@ -1423,6 +1546,7 @@ function answer6() {
     btnanswer7.style.display = "none";
     btnanswer8.style.display = "none";
     btnanswer9.style.display = "none";
+    audio9.play();
     img15.animate(
       [
         {
@@ -1438,7 +1562,6 @@ function answer6() {
         fill: "forwards",
       }
     );
-    audio9.play();
   }, 1500);
   setTimeout(function goneweg() {
     img15.animate(
@@ -1578,8 +1701,10 @@ function gesten2() {
       btnanswer8.replaceWith(btnanswer11);
       btnanswer9.replaceWith(btnanswer12);
       btnanswer10.style.display = "block";
-      btnanswer10.style.display = "block";
-      btnanswer10.style.display = "block";
+      btnanswer11.style.display = "block";
+      btnanswer12.style.display = "block";
+      document.body.appendChild(btntäter2);
+      btntäter2.style.display = "block";
       img17.animate(
         [
           {
@@ -1660,3 +1785,1522 @@ function gesten2() {
   };
 }
 window.gesten2 = gesten2;
+
+// TASK 2
+function answer1t3() {
+  answerstask3_2();
+  btndown = 1;
+}
+window.answer1t3 = answer1t3;
+
+function answer2t3() {
+  answerstask3_2();
+  btndown = 2;
+}
+window.answer2t3 = answer2t3;
+
+function answer3t3() {
+  answerstask3_2();
+  btndown = 3;
+}
+window.answer3t3 = answer3t3;
+
+function answerstask3_2() {
+  btnpassant.style.display = "none";
+  btntäter2.style.display = "none";
+  img17.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img18_2.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer4t3.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer5t3.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer6t3.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+
+  setTimeout(function picanswer() {
+    img18_2.style.display = "none";
+    btnanswer4t3.style.display = "none";
+    btnanswer5t3.style.display = "none";
+    btnanswer6t3.style.display = "none";
+    img17.replaceWith(img8_2);
+    img8_2.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 1500);
+
+  setTimeout(function audioplay() {
+    if (btndown == 1) {
+      audio1t3.play();
+    } else if (btndown == 2) {
+      audio2t3.play();
+    } else if (btndown == 3) {
+      audio3t3.play();
+    }
+  }, 2000);
+}
+window.answerstask3_2 = answerstask3_2;
+
+function task3t() {
+  img18.replaceWith(img18_2);
+  btnanswer10.replaceWith(btnanswer4t3);
+  btnanswer11.replaceWith(btnanswer5t3);
+  btnanswer12.replaceWith(btnanswer6t3);
+  document.body.appendChild(btnpassant);
+}
+window.task3t = task3t;
+
+function changetotask3() {
+  img18_2.replaceWith(img18);
+  btnanswer4t3.replaceWith(btnanswer10);
+  btnanswer5t3.replaceWith(btnanswer11);
+  btnanswer6t3.replaceWith(btnanswer12);
+}
+window.changetotask3 = changetotask3;
+
+function backtot3() {
+  img8_2.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+
+  setTimeout(function () {
+    img8_2.replaceWith(img17);
+    img18_2.style.display = "block";
+    btnanswer4t3.style.display = "block";
+    btnanswer5t3.style.display = "block";
+    btnanswer6t3.style.display = "block";
+    btntäter2.style.display = "block";
+    btnpassant.style.display = "block";
+    img17.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    img18_2.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    btnanswer4t3.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    btnanswer5t3.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    btnanswer6t3.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 1500);
+}
+window.backtot3 = backtot3;
+
+function answer7() {
+  btnpassant.style.display = "none";
+  btntäter2.style.display = "none";
+  img17.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img18.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer10.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer11.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer12.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  setTimeout(function okayvid() {
+    img18.style.display = "none";
+    btnanswer10.style.display = "none";
+    btnanswer11.style.display = "none";
+    btnanswer12.style.display = "none";
+    task4();
+  }, 1500);
+}
+window.answer7 = answer7;
+
+function answer8() {
+  btnpassant.style.display = "none";
+  btntäter2.style.display = "none";
+  img17.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img18.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer10.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer11.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer12.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+
+  setTimeout(function () {
+    img18.style.display = "none";
+    btnanswer10.style.display = "none";
+    btnanswer11.style.display = "none";
+    btnanswer12.style.display = "none";
+    img17.replaceWith(img22);
+    img22.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    audio11.play();
+  }, 1500);
+
+  audio11.onended = function () {
+    img22.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    setTimeout(function () {
+      img22.replaceWith(img23);
+      img23.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+    }, 1500);
+
+    setTimeout(function () {
+      img23.animate(
+        [
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+    }, 4000);
+
+    setTimeout(function () {
+      task4();
+    }, 5500);
+  };
+}
+window.answer8 = answer8;
+
+function answer9() {
+  btnpassant.style.display = "none";
+  btntäter2.style.display = "none";
+  img17.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img18.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer10.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer11.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer12.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+
+  setTimeout(function () {
+    img18.style.display = "none";
+    btnanswer10.style.display = "none";
+    btnanswer11.style.display = "none";
+    btnanswer12.style.display = "none";
+    img17.replaceWith(img24);
+    img24.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    audio12.play();
+  }, 1500);
+
+  audio12.onended = function () {
+    img24.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    setTimeout(function () {
+      img24.replaceWith(img23);
+      img23.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+    }, 1500);
+
+    setTimeout(function () {
+      img23.animate(
+        [
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+    }, 4000);
+
+    setTimeout(function () {
+      task4();
+    }, 5500);
+  };
+}
+window.answer9 = answer9;
+
+function task4() {
+  img17.replaceWith(img19);
+  img23.replaceWith(img19);
+  img19.animate(
+    [
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  audio10.play();
+
+  audio10.onended = function task4da() {
+    img19.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+
+    setTimeout(function () {
+      img19.replaceWith(img20);
+      img18.replaceWith(img21);
+      img21.style.display = "block";
+      btnanswer11.replaceWith(btnanswer13);
+      btnanswer12.replaceWith(btnanswer14);
+      btnanswer13.style.display = "block";
+      btnanswer14.style.display = "block";
+      img20.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      img21.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btnanswer13.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btnanswer14.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+    }, 1500);
+  };
+}
+window.task4 = task4;
+
+function task4away() {
+  img20.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img21.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer13.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer14.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+}
+window.task4away = task4away;
+
+function answer10() {
+  task4away();
+  setTimeout(function () {
+    btnanswer13.style.display = "none";
+    btnanswer14.style.display = "none";
+    img21.style.display = "none";
+    img20.replaceWith(img25);
+    img25.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    audio13.play();
+  }, 1500);
+
+  audio13.onended = function () {
+    img25.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+
+    setTimeout(function () {
+      okaygeste();
+    }, 1500);
+  };
+}
+window.answer10 = answer10;
+
+function answer11() {
+  task4away();
+  setTimeout(function () {
+    btnanswer13.style.display = "none";
+    btnanswer14.style.display = "none";
+    img21.style.display = "none";
+    img20.replaceWith(img26);
+    img26.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 1500);
+  setTimeout(function () {
+    img26.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 3500);
+  setTimeout(function () {
+    okaygeste();
+  }, 5000);
+}
+window.answer11 = answer11;
+
+function okaygeste() {
+  img25.replaceWith(img27);
+  img26.replaceWith(img27);
+  img27.animate(
+    [
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img21.replaceWith(vid7);
+  vid7.style.display = "block";
+  vid7.animate(
+    [
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  vid7.play();
+
+  vid7.onended = function lasttask() {
+    vid7.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    setTimeout(function () {
+      vid7.replaceWith(img29);
+      btnanswer13.replaceWith(btnanswer15);
+      btnanswer14.replaceWith(btnanswer16);
+      btnanswer15.style.display = "block";
+      btnanswer16.style.display = "block";
+      document.body.appendChild(btnpassant2);
+      img29.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btnanswer15.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btnanswer16.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+    }, 1500);
+  };
+}
+window.okaygeste = okaygeste;
+
+function task5away() {
+  btnbetroffene2.style.display = "none";
+  btnpassant2.style.display = "none";
+  img27.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img29.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img30.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer15.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer16.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer17.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  btnanswer18.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  setTimeout(function () {
+    btnanswer15.style.display = "none";
+    btnanswer16.style.display = "none";
+    btnanswer17.style.display = "none";
+    btnanswer18.style.display = "none";
+    img29.style.display = "none";
+    img30.style.display = "none";
+  }, 1500);
+}
+window.task5away = task5away;
+
+function answer12() {
+  task5away();
+  setTimeout(function () {
+    img27.replaceWith(img31);
+    img31.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    audio14.play();
+  }, 1500);
+  setTimeout(function () {
+    audio15.play();
+  }, 2000);
+}
+window.answer12 = answer12;
+
+function answer13() {
+  task5away();
+  setTimeout(function () {
+    img27.replaceWith(img32);
+    img32.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    audio14.play();
+  }, 1500);
+  setTimeout(function () {
+    audio16.play();
+  }, 2000);
+}
+window.answer13 = answer13;
+
+function changetotask5() {
+  img30.replaceWith(img29);
+  btnanswer17.replaceWith(btnanswer15);
+  btnanswer18.replaceWith(btnanswer16);
+}
+window.changetotask5 = changetotask5;
+
+function task5p() {
+  img29.replaceWith(img30);
+  btnanswer15.replaceWith(btnanswer17);
+  btnanswer16.replaceWith(btnanswer18);
+  document.body.appendChild(btnbetroffene2);
+}
+window.task5p = task5p;
+
+function backtot5() {
+  img31.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  img32.animate(
+    [
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      },
+    ],
+    {
+      duration: 1500,
+      iterations: 1,
+      fill: "forwards",
+    }
+  );
+  setTimeout(function () {
+    img31.replaceWith(img27);
+    img32.replaceWith(img27);
+    btnanswer15.style.display = "block";
+    btnanswer16.style.display = "block";
+    btnanswer17.style.display = "block";
+    btnanswer18.style.display = "block";
+    img29.style.display = "block";
+    img30.style.display = "block";
+    btnbetroffene2.style.display = "block";
+    btnpassant2.style.display = "block";
+    img27.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    img29.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    img30.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    btnanswer15.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    btnanswer16.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    btnanswer17.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    btnanswer18.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+  }, 1500);
+}
+window.backtot5 = backtot5;
+
+function end() {
+  task5away();
+  setTimeout(function () {
+    img27.replaceWith(imgend);
+    imgend.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    img29.replaceWith(vid8);
+    vid8.animate(
+      [
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    vid8.play();
+  }, 1500);
+
+  vid8.onended = function neustart() {
+    imgend.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    vid8.animate(
+      [
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+        fill: "forwards",
+      }
+    );
+    setTimeout(function () {
+      vid8.style.display = "none";
+      imgend.replaceWith(img1);
+      document.body.appendChild(btnneustart);
+      document.body.appendChild(btninfo);
+      img1.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btninfo.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+      btnneustart.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 1500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
+    }, 1500);
+  };
+}
+window.end = end;
+
+function neustart() {
+  location.reload();
+}
+window.neustart = neustart;
+function imd() {
+  window.open("https://imd.mediencampus.h-da.de/");
+}
+window.imd = imd;
