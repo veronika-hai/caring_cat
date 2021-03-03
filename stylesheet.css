@@ -6,7 +6,7 @@ body {
 }
 
 .banner {
-  width: 100%;
+  width: 1536px;
   height: 722px;
   overflow: hidden;
   display: flex;
@@ -24,9 +24,10 @@ body {
 
 .banner video {
   top: 0;
-  left: 0;
+  right: 0;
   width: auto;
   height: 100%;
+  position: relative;
 }
 
 #startbtn {
