@@ -29,12 +29,25 @@ body {
   height: 100%;
 }
 
-.banner button {
+.inbannerleft button {
   position: absolute;
   background-color: #fcdbdb;
   color: #591126;
   text-align: center;
   font-size: 30px;
+  font-family: Merriweather;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.inbannerright button {
+  position: absolute;
+  background-color: #591126;
+  color: #fcdbdb;
+  text-align: center;
+  font-size: 25px;
   font-family: Merriweather;
   padding: 12px 24px;
   border: none;
@@ -86,7 +99,7 @@ body {
 }
 
 #quizstart {
-  top: 500px;
+  top: 540px;
   left: auto;
 }
 
@@ -96,91 +109,17 @@ body {
   object-fit: cover;
   width: auto;
   height: 100%;
+  max-height: 722px;
 }
 
 .a1 {
-  position: absolute;
   top: 370px;
-  left: 75.5%;
-  background-color: #591126;
-  color: #fcdbdb;
-  text-align: center;
-  font-size: 25px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
 .a2 {
-  position: absolute;
   top: 480px;
-  left: 82%;
-  background-color: #591126;
-  color: #fcdbdb;
-  text-align: center;
-  font-size: 25px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
 .a3 {
-  position: absolute;
   top: 590px;
-  left: 80%;
-  background-color: #591126;
-  color: #fcdbdb;
-  text-align: center;
-  font-size: 25px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.a4 {
-  position: absolute;
-  top: 370px;
-  left: 80%;
-  background-color: #591126;
-  color: #fcdbdb;
-  text-align: center;
-  font-size: 25px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.a5 {
-  position: absolute;
-  top: 480px;
-  left: 79.9%;
-  background-color: #591126;
-  color: #fcdbdb;
-  text-align: center;
-  font-size: 25px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.a6 {
-  position: absolute;
-  top: 590px;
-  left: 78%;
-  background-color: #591126;
-  color: #fcdbdb;
-  text-align: center;
-  font-size: 25px;
-  font-family: Merriweather;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
 .a7 {
   position: absolute;
@@ -312,61 +251,21 @@ body {
 #audio1 {
   display: "none";
 }
-#selectb {
-  position: absolute;
+
+.inbannerright .selectb {
   top: 49px;
-  left: 83.7%;
-  padding: 45px 47px;
+  padding: 45px 45px;
   background: none;
-  border: none;
-  cursor: pointer;
 }
-#selectt {
-  position: absolute;
+.inbannerright .selectt {
   top: 49px;
-  left: 75%;
-  padding: 45px 47px;
-  background: none;
-  border: none;
-  cursor: pointer;
+  left: 10%;
 }
-#selectt2 {
-  position: absolute;
+.inbannerright .selectp {
   top: 49px;
-  left: 75%;
-  padding: 45px 47px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none;
+  right: 10%;
 }
-#selectp {
-  position: absolute;
-  top: 49px;
-  left: 92.4%;
-  padding: 45px 47px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-#selectp2 {
-  position: absolute;
-  top: 49px;
-  left: 92.4%;
-  padding: 45px 47px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-#selectb2 {
-  position: absolute;
-  top: 49px;
-  left: 83.7%;
-  padding: 45px 47px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+
 #neustart {
   position: absolute;
   top: 359px;

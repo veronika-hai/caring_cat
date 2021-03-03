@@ -138,17 +138,17 @@ let btnanswer7 = document.createElement("button");
 btnanswer7.id = "answer7";
 btnanswer7.innerHTML = "*wegrennen*";
 btnanswer7.setAttribute("onclick", "answer4()");
-btnanswer7.setAttribute("class", "a4");
+btnanswer7.setAttribute("class", "a1");
 let btnanswer8 = document.createElement("button");
 btnanswer8.id = "answer8";
 btnanswer8.innerHTML = "*Hilfe-Geste*";
 btnanswer8.setAttribute("onclick", "answer5()");
-btnanswer8.setAttribute("class", "a5");
+btnanswer8.setAttribute("class", "a2");
 let btnanswer9 = document.createElement("button");
 btnanswer9.id = "answer9";
 btnanswer9.innerHTML = "Lass mich in Ruhe!";
 btnanswer9.setAttribute("onclick", "answer6()");
-btnanswer9.setAttribute("class", "a6");
+btnanswer9.setAttribute("class", "a3");
 
 // TASK 3 PASSANT
 let btnanswer10 = document.createElement("button");
@@ -223,21 +223,27 @@ btnanswer18.setAttribute("class", "a15");
 let btnbetroffene = document.createElement("button");
 btnbetroffene.id = "selectb";
 btnbetroffene.setAttribute("onclick", "changetotask2()");
-let btntäter = document.createElement("button");
-btntäter.id = "selectt";
-btntäter.setAttribute("onclick", "changetotask1()");
-let btntäter2 = document.createElement("button");
-btntäter2.id = "selectt2";
-btntäter2.setAttribute("onclick", "task3t()");
-let btnpassant = document.createElement("button");
-btnpassant.id = "selectp";
-btnpassant.setAttribute("onclick", "changetotask3()");
-let btnpassant2 = document.createElement("button");
-btnpassant2.id = "selectp2";
-btnpassant2.setAttribute("onclick", "task5p()");
+btnbetroffene.setAttribute("class", "selectb");
 let btnbetroffene2 = document.createElement("button");
 btnbetroffene2.id = "selectb2";
 btnbetroffene2.setAttribute("onclick", "changetotask5()");
+btnbetroffene2.setAttribute("class", "selectb");
+let btntäter = document.createElement("button");
+btntäter.id = "selectt";
+btntäter.setAttribute("onclick", "changetotask1()");
+btntäter.setAttribute("class", "selectt");
+let btntäter2 = document.createElement("button");
+btntäter2.id = "selectt2";
+btntäter2.setAttribute("onclick", "task3t()");
+btntäter2.setAttribute("class", "selectt");
+let btnpassant = document.createElement("button");
+btnpassant.id = "selectp";
+btnpassant.setAttribute("onclick", "changetotask3()");
+btnpassant.setAttribute("class", "selectp");
+let btnpassant2 = document.createElement("button");
+btnpassant2.id = "selectp2";
+btnpassant2.setAttribute("onclick", "task5p()");
+btnpassant2.setAttribute("class", "selectp");
 
 let btnneustart = document.createElement("button");
 btnneustart.id = "neustart";
@@ -392,7 +398,6 @@ function startVid() {
       img2.replaceWith(img3);
       btnsound.replaceWith(btncatcall1);
       banner.appendChild(btncatcall2);
-      // document.body.appendChild(btncatcall2);
       img3.animate(
         [
           {
@@ -687,9 +692,9 @@ function quizstart() {
 
   vid4.onended = function task1() {
     vid4.replaceWith(img7);
-    document.body.appendChild(btnanswer1);
-    document.body.appendChild(btnanswer2);
-    document.body.appendChild(btnanswer3);
+    banner2.appendChild(btnanswer1);
+    banner2.appendChild(btnanswer2);
+    banner2.appendChild(btnanswer3);
     btnanswer2.style.display = "block";
     btnanswer3.style.display = "block";
   };
@@ -885,7 +890,7 @@ function gestenvid() {
       btnanswer1.replaceWith(btnanswer4);
       btnanswer2.replaceWith(btnanswer5);
       btnanswer3.replaceWith(btnanswer6);
-      document.body.appendChild(btnbetroffene);
+      banner2.appendChild(btnbetroffene);
       img9.animate(
         [
           {
@@ -1208,7 +1213,7 @@ function changetotask2() {
   btnanswer4.replaceWith(btnanswer7);
   btnanswer5.replaceWith(btnanswer8);
   btnanswer6.replaceWith(btnanswer9);
-  document.body.appendChild(btntäter);
+  banner2.appendChild(btntäter);
 }
 window.changetotask2 = changetotask2;
 
@@ -1709,7 +1714,7 @@ function gesten2() {
       btnanswer10.style.display = "block";
       btnanswer11.style.display = "block";
       btnanswer12.style.display = "block";
-      document.body.appendChild(btntäter2);
+      banner2.appendChild(btntäter2);
       btntäter2.style.display = "block";
       img17.animate(
         [
@@ -1930,7 +1935,7 @@ function task3t() {
   btnanswer10.replaceWith(btnanswer4t3);
   btnanswer11.replaceWith(btnanswer5t3);
   btnanswer12.replaceWith(btnanswer6t3);
-  document.body.appendChild(btnpassant);
+  banner2.appendChild(btnpassant);
 }
 window.task3t = task3t;
 
@@ -2788,7 +2793,7 @@ function okaygeste() {
       btnanswer14.replaceWith(btnanswer16);
       btnanswer15.style.display = "block";
       btnanswer16.style.display = "block";
-      document.body.appendChild(btnpassant2);
+      banner2.appendChild(btnpassant2);
       img29.animate(
         [
           {
@@ -3023,7 +3028,7 @@ function task5p() {
   img29.replaceWith(img30);
   btnanswer15.replaceWith(btnanswer17);
   btnanswer16.replaceWith(btnanswer18);
-  document.body.appendChild(btnbetroffene2);
+  banner2.appendChild(btnbetroffene2);
 }
 window.task5p = task5p;
 
@@ -3250,8 +3255,8 @@ function end() {
     setTimeout(function () {
       vid8.style.display = "none";
       imgend.replaceWith(img1);
-      document.body.appendChild(btnneustart);
-      document.body.appendChild(btninfo);
+      banner.appendChild(btnneustart);
+      banner.appendChild(btninfo);
       img1.animate(
         [
           {
