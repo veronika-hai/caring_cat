@@ -42,7 +42,7 @@ body {
 }
 .banner #startbtn {
   top: 359px;
-  left: 46.4%;
+  left: auto;
 }
 
 .banner #soundan {
@@ -56,12 +56,12 @@ body {
 
 .banner #catcalls {
   top: 340px;
-  left: 27%;
+  left: 26vw;
 }
 
 .banner #catcalls2 {
   top: 470px;
-  left: 31%;
+  left: auto;
 }
 
 #quizstart {
