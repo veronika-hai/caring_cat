@@ -241,10 +241,10 @@ btnbetroffene2.setAttribute("onclick", "changetotask5()");
 let btnneustart = document.createElement("button");
 btnneustart.id = "neustart";
 btnneustart.innerHTML = "Neustart";
-btnneustart.setAttribute("onclick", "reload()");
+btnneustart.setAttribute("onclick", "neustart()");
 let btninfo = document.createElement("button");
 btninfo.id = "info";
-btninfo.innerHTML = "Mehr Projekte";
+btninfo.innerHTML = "Interactive Media Design";
 btninfo.setAttribute("onclick", "imd()");
 
 let btndown;

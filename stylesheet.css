@@ -386,11 +386,11 @@ body {
 #neustart {
   position: absolute;
   top: 359px;
-  left: 44.5%;
+  left: 45%;
   background-color: #fcdbdb;
   color: #591126;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: Merriweather;
   padding: 12px 24px;
   border: none;
@@ -400,7 +400,7 @@ body {
 #info {
   position: absolute;
   top: 630px;
-  left: 45%;
+  left: 40.2%;
   background-color: #591126;
   color: #fcdbdb;
   text-align: center;
