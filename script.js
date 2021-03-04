@@ -3255,8 +3255,6 @@ function end() {
     setTimeout(function () {
       vid8.style.display = "none";
       imgend.replaceWith(img1);
-      banner.appendChild(btnneustart);
-      banner.appendChild(btninfo);
       img1.animate(
         [
           {
@@ -3272,6 +3270,10 @@ function end() {
           fill: "forwards",
         }
       );
+    }, 1500);
+    setTimeout(function () {
+      banner.appendChild(btnneustart);
+      banner.appendChild(btninfo);
       btninfo.animate(
         [
           {
@@ -3302,7 +3304,7 @@ function end() {
           fill: "forwards",
         }
       );
-    }, 1500);
+    }, 3000);
   };
 }
 window.end = end;
