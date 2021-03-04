@@ -155,17 +155,17 @@ let btnanswer10 = document.createElement("button");
 btnanswer10.id = "answer10";
 btnanswer10.innerHTML = "Ist alles okay?";
 btnanswer10.setAttribute("onclick", "answer7()");
-btnanswer10.setAttribute("class", "a7");
+btnanswer10.setAttribute("class", "a1");
 let btnanswer11 = document.createElement("button");
 btnanswer11.id = "answer11";
 btnanswer11.innerHTML = "*ignorieren*";
 btnanswer11.setAttribute("onclick", "answer8()");
-btnanswer11.setAttribute("class", "a8");
+btnanswer11.setAttribute("class", "a2");
 let btnanswer12 = document.createElement("button");
 btnanswer12.id = "answer12";
 btnanswer12.innerHTML = "*wegschauen*";
 btnanswer12.setAttribute("onclick", "answer9()");
-btnanswer12.setAttribute("class", "a9");
+btnanswer12.setAttribute("class", "a3");
 
 // TASK 3 TÄTER
 let btnanswer4t3 = document.createElement("button");
@@ -189,35 +189,35 @@ let btnanswer13 = document.createElement("button");
 btnanswer13.id = "answer13";
 btnanswer13.innerHTML = "*beleidigen*";
 btnanswer13.setAttribute("onclick", "answer10()");
-btnanswer13.setAttribute("class", "a10");
+btnanswer13.setAttribute("class", "a1");
 let btnanswer14 = document.createElement("button");
 btnanswer14.id = "answer14";
 btnanswer14.innerHTML = "*wortlos gehen*";
 btnanswer14.setAttribute("onclick", "answer11()");
-btnanswer14.setAttribute("class", "a11");
+btnanswer14.setAttribute("class", "a2");
 
 // TASK 5 B
 let btnanswer15 = document.createElement("button");
 btnanswer15.id = "answer15";
 btnanswer15.innerHTML = "*weinen*";
 btnanswer15.setAttribute("onclick", "answer12()");
-btnanswer15.setAttribute("class", "a12");
+btnanswer15.setAttribute("class", "a1");
 let btnanswer16 = document.createElement("button");
 btnanswer16.id = "answer16";
 btnanswer16.innerHTML = "*Okay-Geste*";
 btnanswer16.setAttribute("onclick", "end()");
-btnanswer16.setAttribute("class", "a13");
+btnanswer16.setAttribute("class", "a2");
 // TASK 5 P
 let btnanswer17 = document.createElement("button");
 btnanswer17.id = "answer17";
 btnanswer17.innerHTML = "Alles wird gut!";
 btnanswer17.setAttribute("onclick", "answer12()");
-btnanswer17.setAttribute("class", "a14");
+btnanswer17.setAttribute("class", "a1");
 let btnanswer18 = document.createElement("button");
 btnanswer18.id = "answer18";
 btnanswer18.innerHTML = "Es ist nicht deine Schuld!";
 btnanswer18.setAttribute("onclick", "answer13()");
-btnanswer18.setAttribute("class", "a15");
+btnanswer18.setAttribute("class", "a2");
 
 // BUTTON CHARAKTER
 let btnbetroffene = document.createElement("button");
