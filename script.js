@@ -3265,7 +3265,7 @@ function end() {
           },
         ],
         {
-          duration: 1500,
+          duration: 1000,
           iterations: 1,
           fill: "forwards",
         }
@@ -3284,7 +3284,7 @@ function end() {
           },
         ],
         {
-          duration: 1500,
+          duration: 500,
           iterations: 1,
           fill: "forwards",
         }
@@ -3299,12 +3299,12 @@ function end() {
           },
         ],
         {
-          duration: 1500,
+          duration: 500,
           iterations: 1,
           fill: "forwards",
         }
       );
-    }, 3000);
+    }, 2500);
   };
 }
 window.end = end;
