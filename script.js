@@ -253,6 +253,10 @@ let btninfo = document.createElement("button");
 btninfo.id = "info";
 btninfo.innerHTML = "Interactive Media Design";
 btninfo.setAttribute("onclick", "imd()");
+let btninfo2 = document.createElement("button");
+btninfo2.id = "info2";
+btninfo2.innerHTML = "Mehr Infos";
+btninfo2.setAttribute("onclick", "imd2()");
 
 let btndown;
 
@@ -3273,6 +3277,7 @@ function end() {
     }, 1500);
     setTimeout(function () {
       banner.appendChild(btnneustart);
+      banner.appendChild(btninfo2);
       banner.appendChild(btninfo);
       btninfo.animate(
         [
@@ -3304,6 +3309,21 @@ function end() {
           fill: "forwards",
         }
       );
+      btninfo2.animate(
+        [
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          },
+        ],
+        {
+          duration: 500,
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
     }, 2500);
   };
 }
@@ -3317,3 +3337,8 @@ function imd() {
   window.open("https://imd.mediencampus.h-da.de/");
 }
 window.imd = imd;
+
+function imd2() {
+  window.open("https://imd.mediencampus.h-da.de/projekt/caringcat/");
+}
+window.imd2 = imd2;
