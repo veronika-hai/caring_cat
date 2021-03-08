@@ -150,7 +150,13 @@ body {
   font-size: 20px;
 }
 #info {
-  top: 630px;
+  top: 650px;
+  background: #591126;
+  color: #fcdbdb;
+  font-size: 15px;
+}
+#info2 {
+  top: 600px;
   background: #591126;
   color: #fcdbdb;
   font-size: 20px;
